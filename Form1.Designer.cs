@@ -96,30 +96,36 @@ namespace Ejercicio_4___Guía3_MM200149
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(220, 77);
+            this.txtnombre.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnombre.Location = new System.Drawing.Point(220, 70);
+            this.txtnombre.MaxLength = 10;
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(111, 20);
+            this.txtnombre.Size = new System.Drawing.Size(111, 30);
             this.txtnombre.TabIndex = 5;
             // 
             // txtapellido
             // 
-            this.txtapellido.Location = new System.Drawing.Point(220, 115);
+            this.txtapellido.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtapellido.Location = new System.Drawing.Point(220, 108);
+            this.txtapellido.MaxLength = 10;
             this.txtapellido.Name = "txtapellido";
-            this.txtapellido.Size = new System.Drawing.Size(111, 20);
+            this.txtapellido.Size = new System.Drawing.Size(111, 30);
             this.txtapellido.TabIndex = 6;
             // 
             // txttelefono
             // 
-            this.txttelefono.Location = new System.Drawing.Point(220, 151);
+            this.txttelefono.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttelefono.Location = new System.Drawing.Point(220, 146);
             this.txttelefono.Name = "txttelefono";
-            this.txttelefono.Size = new System.Drawing.Size(111, 20);
+            this.txttelefono.Size = new System.Drawing.Size(111, 30);
             this.txttelefono.TabIndex = 7;
             // 
             // txtcorreo
             // 
-            this.txtcorreo.Location = new System.Drawing.Point(220, 187);
+            this.txtcorreo.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcorreo.Location = new System.Drawing.Point(220, 185);
             this.txtcorreo.Name = "txtcorreo";
-            this.txtcorreo.Size = new System.Drawing.Size(111, 20);
+            this.txtcorreo.Size = new System.Drawing.Size(111, 30);
             this.txtcorreo.TabIndex = 8;
             // 
             // btnguardar
@@ -146,6 +152,7 @@ namespace Ejercicio_4___Guía3_MM200149
             this.btneliminar.TabIndex = 11;
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.UseVisualStyleBackColor = false;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // dtgvcontactos
             // 

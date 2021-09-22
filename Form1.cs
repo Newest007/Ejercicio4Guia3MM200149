@@ -83,5 +83,25 @@ namespace Ejercicio_4___Guía3_MM200149
             Limpiar();
 
         }
+
+        private void btneliminar_Click(object sender, EventArgs e)
+        {
+
+            if(editar_indice > -1)
+            {
+                Personas.RemoveAt(editar_indice);
+                editar_indice = -1;
+                Limpiar();
+                ActualizarGrid();
+
+            }
+
+            else
+            {
+                MessageBox.Show("Debe dar doble click primero sobre contacto");
+            }
+
+
+        }
     }
 }
