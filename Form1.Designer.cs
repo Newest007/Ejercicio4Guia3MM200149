@@ -34,14 +34,14 @@ namespace Ejercicio_4___Guía3_MM200149
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtapellido = new System.Windows.Forms.TextBox();
+            this.txttelefono = new System.Windows.Forms.TextBox();
+            this.txtcorreo = new System.Windows.Forms.TextBox();
+            this.btnguardar = new System.Windows.Forms.Button();
+            this.btneliminar = new System.Windows.Forms.Button();
+            this.dtgvcontactos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvcontactos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -94,78 +94,80 @@ namespace Ejercicio_4___Guía3_MM200149
             this.label5.TabIndex = 4;
             this.label5.Text = "Contactos";
             // 
-            // textBox1
+            // txtnombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(220, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(111, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtnombre.Location = new System.Drawing.Point(220, 77);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(111, 20);
+            this.txtnombre.TabIndex = 5;
             // 
-            // textBox2
+            // txtapellido
             // 
-            this.textBox2.Location = new System.Drawing.Point(220, 115);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(111, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtapellido.Location = new System.Drawing.Point(220, 115);
+            this.txtapellido.Name = "txtapellido";
+            this.txtapellido.Size = new System.Drawing.Size(111, 20);
+            this.txtapellido.TabIndex = 6;
             // 
-            // textBox3
+            // txttelefono
             // 
-            this.textBox3.Location = new System.Drawing.Point(220, 151);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(111, 20);
-            this.textBox3.TabIndex = 7;
+            this.txttelefono.Location = new System.Drawing.Point(220, 151);
+            this.txttelefono.Name = "txttelefono";
+            this.txttelefono.Size = new System.Drawing.Size(111, 20);
+            this.txttelefono.TabIndex = 7;
             // 
-            // textBox4
+            // txtcorreo
             // 
-            this.textBox4.Location = new System.Drawing.Point(220, 187);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(111, 20);
-            this.textBox4.TabIndex = 8;
+            this.txtcorreo.Location = new System.Drawing.Point(220, 187);
+            this.txtcorreo.Name = "txtcorreo";
+            this.txtcorreo.Size = new System.Drawing.Size(111, 20);
+            this.txtcorreo.TabIndex = 8;
             // 
-            // button1
+            // btnguardar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(408, 94);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 40);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnguardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnguardar.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnguardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnguardar.Location = new System.Drawing.Point(408, 94);
+            this.btnguardar.Name = "btnguardar";
+            this.btnguardar.Size = new System.Drawing.Size(104, 40);
+            this.btnguardar.TabIndex = 9;
+            this.btnguardar.Text = "Guardar";
+            this.btnguardar.UseVisualStyleBackColor = false;
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
-            // button3
+            // btneliminar
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(408, 145);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 40);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btneliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btneliminar.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btneliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btneliminar.Location = new System.Drawing.Point(408, 145);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(104, 40);
+            this.btneliminar.TabIndex = 11;
+            this.btneliminar.Text = "Eliminar";
+            this.btneliminar.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dtgvcontactos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(44, 233);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(490, 188);
-            this.dataGridView1.TabIndex = 12;
+            this.dtgvcontactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvcontactos.Location = new System.Drawing.Point(44, 233);
+            this.dtgvcontactos.Name = "dtgvcontactos";
+            this.dtgvcontactos.Size = new System.Drawing.Size(490, 188);
+            this.dtgvcontactos.TabIndex = 12;
+            this.dtgvcontactos.DoubleClick += new System.EventHandler(this.dtgvcontactos_DoubleClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(576, 443);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dtgvcontactos);
+            this.Controls.Add(this.btneliminar);
+            this.Controls.Add(this.btnguardar);
+            this.Controls.Add(this.txtcorreo);
+            this.Controls.Add(this.txttelefono);
+            this.Controls.Add(this.txtapellido);
+            this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -173,7 +175,8 @@ namespace Ejercicio_4___Guía3_MM200149
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Ejercicio 4 Guía 3 MM200149";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvcontactos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,13 +189,13 @@ namespace Ejercicio_4___Guía3_MM200149
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.TextBox txtapellido;
+        private System.Windows.Forms.TextBox txttelefono;
+        private System.Windows.Forms.TextBox txtcorreo;
+        private System.Windows.Forms.Button btnguardar;
+        private System.Windows.Forms.Button btneliminar;
+        private System.Windows.Forms.DataGridView dtgvcontactos;
     }
 }
 
